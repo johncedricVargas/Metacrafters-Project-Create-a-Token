@@ -1,7 +1,7 @@
 
 # Project: Smart Contract
 
-This solidity smart contract is intended to create, manage, and utulize the features of a basic token system known as CoinToken(CT). It allows for the minting which we add token and burning which remove our tokens. 
+This solidity smart contract is intended to create, manage, and utulize the features of a basic token system known as CoinToken(CT). It allows for the minting for creating or adding token and burning removed tokens.
 
 # Getting Started
 
@@ -13,15 +13,28 @@ This solidity smart contract is intended to create, manage, and utulize the feat
 pragma solidity 0.8.25;
 
 ```
-- **SPDX-License-Identifier: MI** : Indicates the licensed
-- **pragma solidity 0.8.25;** : Solidity Version
+- **SPDX-License-Identifier: MI** : Indicates the lincense
+- **pragma solidity 0.8.25;** : Specify the Version
+
+I declared ContractToken as a contract that allows the user to mint and burn tokens. This contract contains public variables, a mapping , and functions for mining and burning tokens. 
+
+## Public Variables 
+```solidity
+contract ContractToken {
+
+    // public variables here
+    string public tokenName = "CoinToken";
+    string public tokenAbbrv = "CT";
+    uint public totalSupply = 0;
+```
+- the public variables represent the TokenName with a value of CoinToken, with its abbreviation of CT, and lastly, the total supply with a value of 0 
 
 ## Mapping Variable 
 ```solidity
 mapping(address => uint) public balances;
 
 ```
-- A variable that associates Ethereum addresses and the token balances.
+- A variable that associates Ethereum addresses with their token balances.
   
 # Functions
 
@@ -43,8 +56,7 @@ function burn(address addr, uint _amount) public {
     balances[addr] -= _amount;  
 }
 ```
-- This burn function is initialized to allows the contract owner to burn or remove new tokens and assign them from a specific address 
+- This burn function is initialized to allows the contract owner to burn or reduce new tokens and assign them from a specific address 
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
-
