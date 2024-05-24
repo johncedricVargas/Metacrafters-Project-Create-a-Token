@@ -1,12 +1,12 @@
 
-# Project: Smart Contract
+# Project: Create a Token
 
-This solidity smart contract is intended to create, manage, and utulize the features of a basic token system known as CoinToken(CT). It allows for the minting for creating or adding token and burning removed tokens.
+This solidity smart contract is intended to create, manage, and utulized the features of a basic token system known as "Meta(MTA)". It allows for the minting for creating or adding token and burning removed tokens.
 
 # Getting Started
 
 ### Executing the program 
- I use remix: https://remix.ethereum.org/ to make this program.
+ I use remix: https://remix.ethereum.org/ to create this program.
 
 ```solidity
 // SPDX-License-Identifier: MIT
