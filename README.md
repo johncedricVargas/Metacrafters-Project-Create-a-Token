@@ -16,19 +16,6 @@ pragma solidity 0.8.25;
 - **SPDX-License-Identifier: MI** : Indicates the licensed
 - **pragma solidity 0.8.25;** : Solidity Version
 
-I declared ContractToken as a contract that allows the user to mint and burn tokens. This contract contains public variables, a mapping , and functions for mining and burning tokens. 
-
-## Public Variables 
-```solidity
-contract ContractToken {
-
-    // public variables here
-    string public tokenName = "CoinToken";
-    string public tokenAbbrv = "CT";
-    uint public totalSupply = 0;
-```
-- the public variables represent the TokenName with a value of CoinToken, with its abbreviation of CT, and lastly, the total supply with a value of 0 
-
 ## Mapping Variable 
 ```solidity
 mapping(address => uint) public balances;
