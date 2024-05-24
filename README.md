@@ -1,20 +1,20 @@
 
 # Project: Smart Contract
 
-This solidity smart contract is intended to create, manage, and utulize the features of a basic token system known as CoinToken(CT). It allows for the minting (creating) and burning (reduce) of tokens, as well as confirming the balance of the adrress. 
+This solidity smart contract is intended to create, manage, and utulize the features of a basic token system known as CoinToken(CT). It allows for the minting which we add token and burning which remove our tokens. 
 
 # Getting Started
 
 ### Executing the program 
- I use remix: https://remix.ethereum.org/ to make this program. It is a website, hence, download in not needed. 
+ I use remix: https://remix.ethereum.org/ to make this program.
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.25;
 
 ```
-- **SPDX-License-Identifier: MI** : T indicates the license under which the code is released.
-- **pragma solidity 0.8.25;** : Specifies the version of the solidity that is used.
+- **SPDX-License-Identifier: MI** : Indicates the licensed
+- **pragma solidity 0.8.25;** : Solidity Version
 
 I declared ContractToken as a contract that allows the user to mint and burn tokens. This contract contains public variables, a mapping , and functions for mining and burning tokens. 
 
@@ -34,7 +34,7 @@ contract ContractToken {
 mapping(address => uint) public balances;
 
 ```
-- A variable that associates Ethereum addresses with their token balances.
+- A variable that associates Ethereum addresses and the token balances.
   
 # Functions
 
@@ -56,7 +56,7 @@ function burn(address addr, uint _amount) public {
     balances[addr] -= _amount;  
 }
 ```
-- This burn function is initialized to allows the contract owner to burn or reduce new tokens and assign them from a specific address 
+- This burn function is initialized to allows the contract owner to burn or remove new tokens and assign them from a specific address 
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
